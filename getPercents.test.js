@@ -11,7 +11,13 @@ describe("test function getPercents",
     expect(result).toBe(9);
   })
    );
- 
+  describe("test function getPercents",
+   () =>
+    it('сorner case', () => {
+      const result = getPercents("yyy", 350);
+      expect(result).toBe(NaN);
+    })
+     );
  
  
  
